@@ -174,7 +174,7 @@ def ast_str(node: Node) -> str:
 # =============================================================================
 
 
-def parse_reg_exp(inp):
+def parse_reg_exp(inp: str) -> Node:
     parser = Parser(inp)
     ast = parser.parse()
     print("Input:", inp)
