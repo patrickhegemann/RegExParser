@@ -150,7 +150,7 @@ class Parser:
             self.next_token()
             return normal
 
-    def parse(self):
+    def parse(self) -> Node:
         r = self.regex()
         if self.tokens:
             self.error(f"Unexpected symbol: {self.peek()}")
